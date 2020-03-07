@@ -1,0 +1,17 @@
+/*
+    Import 3rd Party Libraries
+---------------------------------*/
+
+@import "~font-awesome/css/font-awesome.css";
+
+/*
+    Import Scss Files
+---------------------------------*/
+
+@import './_base/variables';
+@import './_base/reset';
+@import './_base/typography';
+
+@import './_helpers/media-queries';
+
+@import './_page/home';

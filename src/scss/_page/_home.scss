@@ -1,0 +1,104 @@
+/*
+    Custom SCSS Style
+-------------------------*/
+
+.title__section {
+
+    &--wrapper  {
+        font-size: $titleSize;
+        margin: 1em;
+        text-align: center;
+        color: $whiteColor;
+        font-weight: 50;
+
+        .text-lime {
+            font-weight: 700;
+            color: $primaryColor;
+        }
+    }
+}
+
+.input__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--task {
+        margin: 0.25em;
+        padding: 0.5em 1em;
+        width: 450px;
+        height: 50px;
+        background-color: $whiteColor;
+        font-size: 1.15rem;
+        border-radius: 25px;
+        border: 2px dotted #F9F9F9;
+        outline: none;
+        transition: all 0.5s ease;
+
+        &:focus {
+            border: 2px dotted $primaryColor;
+        }
+    }
+
+    &--add {
+        margin: 0.25em;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $primaryColor;
+        color: $whiteColor;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: #13d313;
+        }
+    }
+}
+
+.item__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+
+    &--wrapper {
+        padding: 0.5em;
+        margin-bottom: 1.5em;
+        border-bottom: 4px solid $whiteColor;
+
+        .item__section--input {
+            background-color: transparent;
+            color: $whiteColor;
+            width: 350px;
+            font-size: 1.325rem;
+            outline: none;
+            border: none;
+            font-family: $hindFont;
+        }
+
+        .item__section--edit {
+            margin: 0 0.5em;
+            font-size: $taskFieldSize;
+            color: $primaryColor;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .item__section--remove {
+            margin: 0 0.5em;
+            font-size: $taskFieldSize;
+            color: #E00;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
